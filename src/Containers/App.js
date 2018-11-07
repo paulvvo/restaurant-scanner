@@ -13,11 +13,11 @@ class App extends Component {
 		super();
 		this.state = {
 			cityInput:"",
-
+			restaurantList:[],
 		}
 	}
 	componentDidMount(){
-		fetch("http://opentable.herokuapp.com/api/restaurants?city=toronto")
+		fetch("http://opentable.herokuapp.com/api/cities")
 		.then(response => response.json())
 		.then(console.log);
 	}
@@ -36,7 +36,12 @@ class App extends Component {
 	onCityInputSubmit = (event) =>{
 		fetch("http://opentable.herokuapp.com/api/restaurants?city="+this.state.cityInput)
 		.then(response => response.json())
-		.then(console.log);
+		.then(dataObject => {
+			console.log(dataObject.restaurants);
+			this.setState({restaurantList:dataObject.restaurants})
+		});
+
+
 	}
 }
 
