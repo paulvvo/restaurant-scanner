@@ -4,7 +4,8 @@ import React from "react";
 const CityInput = () => {
 	return(
 		<div>
-		city input
+			<input type="text" placeholder="Enter in a city"/>
+			<button>Gooooo!</button>
 		</div>
 	)
 }
