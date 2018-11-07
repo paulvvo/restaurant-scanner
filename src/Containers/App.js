@@ -24,7 +24,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-				<CityInput onCityInputChange={this.onCityInputChange}/>
+				<CityInput onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
       </div>
     );
   }
@@ -34,7 +34,9 @@ class App extends Component {
 		this.setState({cityInput:event.target.value});
 	}
 	onCityInputSubmit = (event) =>{
-		
+		fetch("http://opentable.herokuapp.com/api/restaurants?city="+this.state.cityInput)
+		.then(response => response.json())
+		.then(console.log);
 	}
 }
 
