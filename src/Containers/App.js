@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import './App.css';
 
+//Components
+import CityInput from "../Components/CityInput/CityInput";
+
+
+
 class App extends Component {
 
 
@@ -13,10 +18,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+				<CityInput/>
       </div>
     );
   }
 }
 
 export default App;
+
+
+//Components Planning
+// need a input
+// then need a list
