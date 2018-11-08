@@ -4,7 +4,7 @@ import './App.css';
 
 //Components
 import NavBar from "../Components/NavBar/NavBar";
-import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
+import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";	
 
 class App extends Component {
 	constructor(){

@@ -8,7 +8,7 @@
 	flex-wrap:wrap;
 	justify-content:center;
 	width:90%;
-
+	user-select:none;
 	margin:0 auto;
 	padding:0.8em;
 	margin-top:8em;

@@ -8,7 +8,7 @@ const RestaCard = (props) =>{
 	return(
 		<div className="restaCard">
 			<h4>{restaurant.name}</h4>
-			<img src={restaurant.image_url} alt="#0"/>
+			<img src={restaurant.image_url} alt="#0" draggable="false"/>
 			<p> Location: {restaurant.address} </p>
 			<p> Price: {restaurant.price} <i className="fas fa-arrow-right"></i><Price price={restaurant.price}/></p>
 
