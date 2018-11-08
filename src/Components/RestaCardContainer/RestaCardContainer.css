@@ -1,0 +1,27 @@
+.restaCardContainer{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	width:90%;
+	border:1px solid black;
+	margin:0 auto;
+	padding:0.8em;
+}
+.restaCard .icon{
+	padding:0.5em;
+	position:absolute;
+}
+.restaCard{
+	position:relative;
+	width: 20em;
+	background-color:pink;
+	border:0.5px solid black;
+	margin: 1em;
+	border-radius:1em;
+	text-align:center;
+
+}
+.restaCard img{
+	border-radius:1em;
+
+}

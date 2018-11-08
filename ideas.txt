@@ -1,0 +1,2 @@
+add google maps with each restaurant
+information cards for each restaurant
