@@ -1,5 +1,7 @@
 import React from "react";
 
+//Components
+import RestaCard from "../RestaCard/RestaCard";
 
 const RestaCardContainer = (props) =>{
 	// console.log(props.restaurantList);
@@ -8,7 +10,7 @@ const RestaCardContainer = (props) =>{
 		<div>
 			{
 				props.restaurantList.map((item) =>{
-					return <div>test</div>
+					return <RestaCard key={item.id} restaurant={item}/>
 				})
 			}
 		</div>
