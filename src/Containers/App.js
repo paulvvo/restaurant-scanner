@@ -6,10 +6,7 @@ import './App.css';
 import NavBar from "../Components/NavBar/NavBar";
 import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
 
-
-
 class App extends Component {
-
 	constructor(){
 		super();
 		this.state = {
@@ -17,7 +14,6 @@ class App extends Component {
 			restaurantList:[],
 		}
 	}
-
   render() {
     return (
       <div className="App">
@@ -26,8 +22,6 @@ class App extends Component {
       </div>
     );
   }
-
-
 	onCityInputChange = (event) =>{
 		this.setState({cityInput:event.target.value});
 	}
@@ -35,7 +29,6 @@ class App extends Component {
 		typeof city === 'string'
 		? this.restaurantCityFetch(city)
 		: this.restaurantCityFetch(this.state.cityInput)
-
 	}
 	restaurantCityFetch = (stringCityName) =>{
 		fetch("http://opentable.herokuapp.com/api/restaurants?city="+stringCityName)
