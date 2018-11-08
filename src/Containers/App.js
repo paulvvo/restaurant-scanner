@@ -4,6 +4,7 @@ import './App.css';
 
 //Components
 import CityInput from "../Components/CityInput/CityInput";
+import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
 
 
 
@@ -19,12 +20,13 @@ class App extends Component {
 	componentDidMount(){
 		fetch("http://opentable.herokuapp.com/api/cities")
 		.then(response => response.json())
-		.then(console.log);
+		.then(data => console.log("componentDidMount",data));
 	}
   render() {
     return (
       <div className="App">
 				<CityInput onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
+				<RestaCardContainer restaurantList={this.state.restaurantList}/>
       </div>
     );
   }
@@ -37,11 +39,10 @@ class App extends Component {
 		fetch("http://opentable.herokuapp.com/api/restaurants?city="+this.state.cityInput)
 		.then(response => response.json())
 		.then(dataObject => {
-			console.log(dataObject.restaurants);
+			// console.log(typeof dataObject.restaurants);
+			// console.log(dataObject.restaurants);
 			this.setState({restaurantList:dataObject.restaurants})
 		});
-
-
 	}
 }
 
