@@ -4,7 +4,6 @@ import './App.css';
 
 //Components
 import NavBar from "../Components/NavBar/NavBar";
-import CityInput from "../Components/CityInput/CityInput";
 import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
 
 

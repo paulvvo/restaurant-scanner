@@ -6,7 +6,7 @@ const CityInput = (props) => {
 	return(
 		<div className="search">
 			<input type="text" placeholder="Enter in a city" onChange={onCityInputChange} required/>
-			<button onClick={onCityInputSubmit}>GO <i class="fas fa-angle-double-right"></i></button>
+			<button onClick={onCityInputSubmit}>GO <i className="fas fa-angle-double-right"></i></button>
 		</div>
 	)
 }

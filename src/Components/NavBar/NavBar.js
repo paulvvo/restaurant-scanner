@@ -11,6 +11,7 @@ class NavBar extends Component{
 		const {onCityInputChange, onCityInputSubmit} = this.props;
 		return(
 			<div className="navbar">
+				<div className="title">Restaurant Scanner <i class="fas fa-utensils"></i></div>
 				<CityInput onCityInputChange={onCityInputChange} onCityInputSubmit={onCityInputSubmit}/>
 			</div>
 		)

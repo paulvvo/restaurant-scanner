@@ -8,6 +8,11 @@
 	user-select:none;
 	z-index:1;
 }
+.navbar .title{
+	font-size:2em;
+	float:left;
+	color:white;
+}
 .navbar input{
 	width: 20em;
 	height:1.4em;

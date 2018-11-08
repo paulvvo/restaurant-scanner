@@ -1,11 +1,15 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+	font-family: 'Tajawal', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	background-image:url("https://images.unsplash.com/photo-1521112916280-502f0b259632?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=91914b17e1e274d56a2c72d68c09cf33&auto=format&fit=crop&w=1268&q=80");
+	background-image:url("https://images.unsplash.com/photo-1483959651481-dc75b89291f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cc56016233ca58bf18a280a5dca0abe7&auto=format&fit=crop&w=1501&q=80");
+	background-image:url("https://images.unsplash.com/photo-1504183076530-34da727624a3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9d8061dec72124a24e1e1a13cc3e3819&auto=format&fit=crop&w=1400&q=80");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 code {
