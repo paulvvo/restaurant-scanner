@@ -3,3 +3,5 @@ information cards for each restaurant
 mobile responsiveness - navbar dropdown
 add number of pages
 user interface and animations
+add accounts
+add features to save favourite restaurants

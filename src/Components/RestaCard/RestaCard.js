@@ -3,7 +3,7 @@ import React from "react";
 
 const RestaCard = (props) =>{
 	const {restaurant}  = props;
-	console.log(restaurant);
+	// console.log(restaurant);
 	return(
 		<div className="restaCard">
 				<h4>{restaurant.name}</h4>
