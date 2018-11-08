@@ -4,9 +4,9 @@ import React from "react";
 const CityInput = (props) => {
 	const {onCityInputChange, onCityInputSubmit} = props;
 	return(
-		<div>
+		<div className="search">
 			<input type="text" placeholder="Enter in a city" onChange={onCityInputChange} required/>
-			<button onClick={onCityInputSubmit}>Gooooo!</button>
+			<button onClick={onCityInputSubmit}>GO <i class="fas fa-angle-double-right"></i></button>
 		</div>
 	)
 }

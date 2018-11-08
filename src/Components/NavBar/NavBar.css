@@ -1,0 +1,33 @@
+.navbar {
+	background-color:rgba(0, 9, 25, 0.8);
+	padding:1em;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	user-select:none;
+	z-index:1;
+}
+.navbar input{
+	width: 20em;
+	height:1.4em;
+	border-radius: 0.5em;
+	outline-width:0;
+	padding:0.7em;
+	margin:0 0.5em;
+
+}
+.navbar button{
+	outline-style:none;
+	border-style:none;
+	background-color:rgba(255,255,255,0.1);
+	padding:1em;
+	margin-right:2em;
+	border-radius: 0.5em;
+}
+.navbar button:hover{
+	background-color:rgba(255,255,255,0.6);
+}
+.navbar .search{
+	float:right;
+}

@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 //Components
+import NavBar from "../Components/NavBar/NavBar";
 import CityInput from "../Components/CityInput/CityInput";
 import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
 
@@ -17,15 +18,11 @@ class App extends Component {
 			restaurantList:[],
 		}
 	}
-	componentDidMount(){
-		fetch("http://opentable.herokuapp.com/api/cities")
-		.then(response => response.json())
-		.then(data => console.log("componentDidMount",data));
-	}
+
   render() {
     return (
       <div className="App">
-				<CityInput onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
+				<NavBar onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
 				<RestaCardContainer restaurantList={this.state.restaurantList}/>
       </div>
     );

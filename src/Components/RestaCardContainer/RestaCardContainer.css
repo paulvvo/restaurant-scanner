@@ -1,3 +1,8 @@
+.EmptyCityParameter{
+	color:red;
+		margin-top:5em;
+		text-align:center;
+}
 .restaCardContainer{
 	display:flex;
 	flex-wrap:wrap;
@@ -6,6 +11,7 @@
 	border:1px solid black;
 	margin:0 auto;
 	padding:0.8em;
+	margin-top:5em;
 }
 .restaCard .icon{
 	padding:0.5em;
@@ -23,5 +29,4 @@
 }
 .restaCard img{
 	border-radius:1em;
-
 }
