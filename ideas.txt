@@ -1,3 +1,5 @@
 add google maps with each restaurant
 information cards for each restaurant
-mobile responsiveness
+mobile responsiveness - navbar dropdown
+add number of pages
+user interface and animations

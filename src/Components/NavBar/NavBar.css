@@ -13,13 +13,25 @@
 	float:left;
 	color:white;
 }
+.navbar .popularCitiesNav{
+	margin-left:0.5em;
+	padding:1em;
+	clear:both;
+	display:inline-block;
+	color:white;
+	border-radius:0.5em;
+}
+.navbar .popularCitiesNav:hover{
+	background-color:rgba(255,255,255,0.6);
+	color:black;
+}
 .navbar input{
-	width: 20em;
-	height:1.4em;
+	width: 10em;
+	height:1.5em;
 	border-radius: 0.5em;
 	outline-width:0;
 	padding:0.7em;
-	margin:0 0.5em;
+	margin:0.1em 0.5em;
 
 }
 .navbar button{
@@ -29,9 +41,11 @@
 	padding:1em;
 	margin-right:2em;
 	border-radius: 0.5em;
+	color:white;
 }
 .navbar button:hover{
 	background-color:rgba(255,255,255,0.6);
+	color:black;
 }
 .navbar .search{
 	float:right;

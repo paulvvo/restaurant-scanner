@@ -31,20 +31,20 @@ class App extends Component {
 	onCityInputChange = (event) =>{
 		this.setState({cityInput:event.target.value});
 	}
-	onCityInputSubmit = (event) =>{
-		fetch("http://opentable.herokuapp.com/api/restaurants?city="+this.state.cityInput)
+	onCityInputSubmit = (city) =>{
+		typeof city === 'string'
+		? this.restaurantCityFetch(city)
+		: this.restaurantCityFetch(this.state.cityInput)
+
+	}
+	restaurantCityFetch = (stringCityName) =>{
+		fetch("http://opentable.herokuapp.com/api/restaurants?city="+stringCityName)
 		.then(response => response.json())
 		.then(dataObject => {
-			// console.log(typeof dataObject.restaurants);
-			// console.log(dataObject.restaurants);
 			this.setState({restaurantList:dataObject.restaurants})
-		});
+		})
+		.catch(err => console.log(err,"restaurant fetch error"));
 	}
 }
 
 export default App;
-
-
-//Components Planning
-// need a input
-// then need a list
