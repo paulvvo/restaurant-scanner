@@ -24,6 +24,7 @@
 .navbar .popularCitiesNav:hover{
 	background-color:rgba(255,255,255,0.6);
 	color:black;
+	cursor:pointer;
 }
 .navbar input{
 	width: 10em;
@@ -46,6 +47,7 @@
 .navbar button:hover{
 	background-color:rgba(255,255,255,0.6);
 	color:black;
+		cursor:pointer;
 }
 .navbar .search{
 	float:right;
