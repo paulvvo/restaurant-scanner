@@ -5,8 +5,8 @@ export const getCities = (cityInput) => dispatch =>{
 		type:GET_CITIES_PENDING,
 		payload:{}
 	})
-	
-	fetch("http://opentable.herokuapp.com/api/restaurants?city="+stringCityName)
+
+	fetch("http://opentable.herokuapp.com/api/restaurants?city="+cityInput)
 	.then(response => response.json())
 	.then(dataObject => {
 		dispatch({
