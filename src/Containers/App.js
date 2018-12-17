@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import {Provider} from "react-redux";
 
 import './App.css';
+import store from "../store";
+
 
 //Components
 import NavBar from "../Components/NavBar/NavBar";
-import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";	
+import RestaCardContainer from "../Components/RestaCardContainer/RestaCardContainer";
 
 class App extends Component {
 	constructor(){
@@ -16,10 +19,12 @@ class App extends Component {
 	}
   render() {
     return (
-      <div className="App">
-				<NavBar onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
-				<RestaCardContainer restaurantList={this.state.restaurantList}/>
-      </div>
+			<Provider store={store}>
+	      <div className="App">
+					<NavBar onCityInputChange={this.onCityInputChange} onCityInputSubmit={this.onCityInputSubmit}/>
+					<RestaCardContainer restaurantList={this.state.restaurantList}/>
+	      </div>
+			</Provider>
     );
   }
 	onCityInputChange = (event) =>{
@@ -39,5 +44,4 @@ class App extends Component {
 		.catch(err => console.log(err,"restaurant fetch error"));
 	}
 }
-
 export default App;
